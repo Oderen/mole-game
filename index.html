@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/mole.png" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mole Game</title>
+  </head>
+  <body>
+    <h1 class="title">
+      <span class="title__text"><span class="title__word">Mole</span> Game</span
+      ><img
+        class="title__img"
+        style="transform: rotate(0deg); margin-right: 20px"
+        src="./images/mole.png"
+        alt="mole"
+      />
+      <img class="title__img" src="./images/hammer.png" alt="mole" />
+    </h1>
+    <div class="container">
+      <div class="statistics">
+        <div class="timer">
+          <p class="timer__text">Timer:</p>
+          <p class="timer__number" style="font-size: 45px; margin-top: 30px">
+            0
+          </p>
+        </div>
+        <div class="score">
+          <p class="score__text">Score:</p>
+          <p class="score__number" style="font-size: 45px; margin-top: 30px">
+            0
+          </p>
+        </div>
+      </div>
+      <div class="board">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+      <button type="reset" class="reset-btn">Start Game</button>
+
+      <div id="modal" class="modal">
+        <p class="modal_text">Game Over</p>
+      </div>
+      <div class="cursor"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
